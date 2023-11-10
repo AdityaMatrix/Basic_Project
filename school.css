@@ -1,0 +1,68 @@
+body {
+    background-image: url('sbg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease; /* Add a smooth transition for link color */
+}
+
+a:hover {
+    color:blue; /* Change link color on hover */
+}
+
+hr {
+    border: 1px solid #ccc;
+}
+
+/* Animation for the list items */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+li {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Animation for the headings */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    animation: slideIn 0.5s ease-out;
+}
